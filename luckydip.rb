@@ -21,14 +21,14 @@ class LuckyDip
 
   def input
     text
-    @game = gets.chomp.to_i
-    play(@game)
+    game = gets.chomp.to_i
+    play(game)
   end
 
   def random(numbers)
-    @number = numbers.sample
-    print "#{@number}, "
-    numbers.delete(@number)
+    number = numbers.sample
+    print "#{number}, "
+    numbers.delete(number)
   end
 
   def play(game)
@@ -36,16 +36,16 @@ class LuckyDip
     case game
     when 1
       5.times { random(@life) }
-      print "extra > #{rand(10)}"
+      print "extra -> #{rand(1..10)}"
     when 2
       5.times { random(@euro) }
-      print "extra > "
+      print "extra -> "
       2.times { random(@euro_extra) }
     when 3
       6.times { random(@lotto) }
     when 4
       5.times { random(@thunder) }
-      print "extra > #{rand(14)}"
+      print "extra -> #{rand(1..14)}"
     else
       print "wrong number. Bye"
     end
