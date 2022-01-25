@@ -7,6 +7,14 @@ class LuckyDip
     @thunder = Array(1..39)
   end
 
+  def input
+    text
+    game = gets.chomp.to_i
+    play(game)
+  end
+
+  private 
+
   def text
     puts "Which game should I play?"
     puts "input '1' for SET FOR LIFE"
@@ -17,12 +25,6 @@ class LuckyDip
 
   def luck
     puts "Your random numbers are"
-  end
-
-  def input
-    text
-    game = gets.chomp.to_i
-    play(game)
   end
 
   def random(numbers)
