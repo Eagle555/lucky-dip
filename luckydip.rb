@@ -37,8 +37,10 @@ class LuckyDip
     luck if game <= 4 && game >= 1
     case game
     when 1
-      5.times { random(@life) }
-      print "extra -> #{rand(1..10)}"
+      5.times do
+        5.times { random(@life) }
+        print "extra -> #{rand(1..10)} \n"
+      end
     when 2
       5.times { random(@euro) }
       print "extra -> "
