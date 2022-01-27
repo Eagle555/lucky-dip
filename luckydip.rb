@@ -42,9 +42,12 @@ class LuckyDip
         print "extra -> #{rand(1..10)} \n"
       end
     when 2
-      5.times { random(@euro) }
-      print "extra -> "
-      2.times { random(@euro_extra) }
+      5.times do
+        5.times { random(@euro) }
+        print "extra -> "
+        2.times { random(@euro_extra) }
+        puts
+      end
     when 3
       6.times { random(@lotto) }
     when 4
