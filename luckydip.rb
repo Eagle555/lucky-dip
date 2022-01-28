@@ -49,7 +49,10 @@ class LuckyDip
         puts
       end
     when 3
-      6.times { random(@lotto) }
+      5.times do
+        6.times { random(@lotto) }
+        puts
+      end
     when 4
       5.times { random(@thunder) }
       print "extra -> #{rand(1..14)}"
