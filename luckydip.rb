@@ -54,8 +54,11 @@ class LuckyDip
         puts
       end
     when 4
-      5.times { random(@thunder) }
-      print "extra -> #{rand(1..14)}"
+      5.times do
+        5.times { random(@thunder) }
+        print "extra -> #{rand(1..14)}"
+        puts
+      end
     else
       print "wrong number. Bye"
     end
