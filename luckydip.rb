@@ -60,7 +60,8 @@ class LuckyDip
         puts
       end
     else
-      print "wrong number. Bye"
+      puts "Wrong number. Try again"
+      input
     end
   end
 end
