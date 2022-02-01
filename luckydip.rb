@@ -21,6 +21,7 @@ class LuckyDip
     puts "input '2' for EUROMILLIONS"
     puts "input '3' for LOTTO"
     puts "input '4' for THUNDERBALL"
+    puts "input '5' to exit"
   end
 
   def luck
@@ -59,6 +60,8 @@ class LuckyDip
         print "extra -> #{rand(1..14)}"
         puts
       end
+    when 5
+      puts "Thank you. Bye"
     else
       puts "Wrong number. Try again"
       input
