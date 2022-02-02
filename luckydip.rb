@@ -21,7 +21,8 @@ class LuckyDip
     puts "input '2' for EUROMILLIONS"
     puts "input '3' for LOTTO"
     puts "input '4' for THUNDERBALL"
-    puts "input '5' to exit"
+    puts "input '5' for EUROMILLIONS HOTPICKS"
+    puts "input '6' to exit"
   end
 
   def luck
@@ -61,6 +62,15 @@ class LuckyDip
         puts
       end
     when 5
+      puts "Pick how many numbers you want to match (1-5)"
+      pick = gets.chomp.to_i
+      pick = 5 unless pick <= 5 && pick >= 1
+      luck
+      5.times do
+        pick.times { random(@euro) }
+        puts
+      end
+    when 6
       puts "Thank you. Bye"
     else
       puts "Wrong number. Try again"
