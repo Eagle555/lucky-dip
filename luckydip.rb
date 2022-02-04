@@ -10,7 +10,10 @@ class LuckyDip
   def input
     text
     game = gets.chomp.to_i
-    play(game)
+    puts "How many lines should I generate? (max. 100)"
+    lines = gets.chomp.to_i
+    lines = 5 unless lines <= 100 && lines >= 1
+    play(game, lines)
   end
 
   private 
@@ -36,49 +39,55 @@ class LuckyDip
     numbers.delete(number)
   end
 
-  def play(game)
+  def play(game, lines)
     luck if game <= 4 && game >= 1
     case game
     when 1
-      5.times do
+      lines.times do
         5.times { random(@life) }
         print "extra -> #{rand(1..10)} \n"
+        initialize
       end
     when 2
-      5.times do
+      lines.times do
         5.times { random(@euro) }
         print "extra -> "
         2.times { random(@euro_extra) }
         puts
+        initialize
       end
     when 3
-      5.times do
+      lines.times do
         6.times { random(@lotto) }
         puts
+        initialize
       end
     when 4
-      5.times do
+      lines.times do
         5.times { random(@thunder) }
         print "extra -> #{rand(1..14)}"
         puts
+        initialize
       end
     when 5
       puts "Pick how many numbers you want to match (1-5)"
       pick = gets.chomp.to_i
       pick = 5 unless pick <= 5 && pick >= 1
       luck
-      5.times do
+      lines.times do
         pick.times { random(@euro) }
         puts
+        initialize
       end
     when 6
       puts "Pick how many numbers you want to match (1-5)"
       pick = gets.chomp.to_i
       pick = 5 unless pick <= 5 && pick >= 1
       luck
-      5.times do
+      lines.times do
         pick.times { random(@lotto) }
         puts
+        initialize
       end
     when 7
       puts "Thank you. Bye"
