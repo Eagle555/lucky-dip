@@ -43,7 +43,10 @@ class LuckyDip
     luck if game <= 4 && game >= 1
     case game
     when 1
+      line = 0
       lines.times do
+        line += 1
+        print "Line #{line}: "
         5.times { random(@life) }
         print "extra -> #{rand(1..10)} \n"
         initialize
