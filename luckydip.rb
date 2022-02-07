@@ -41,9 +41,9 @@ class LuckyDip
 
   def play(game, lines)
     luck if game <= 4 && game >= 1
+    line = 0
     case game
     when 1
-      line = 0
       lines.times do
         line += 1
         print "Line #{line}: "
@@ -53,6 +53,8 @@ class LuckyDip
       end
     when 2
       lines.times do
+        line += 1
+        print "Line #{line}: "
         5.times { random(@euro) }
         print "extra -> "
         2.times { random(@euro_extra) }
