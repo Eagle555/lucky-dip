@@ -63,6 +63,8 @@ class LuckyDip
       end
     when 3
       lines.times do
+        line += 1
+        print "Line #{line}: "
         6.times { random(@lotto) }
         puts
         initialize
