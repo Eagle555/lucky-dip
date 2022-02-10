@@ -71,6 +71,8 @@ class LuckyDip
       end
     when 4
       lines.times do
+        line += 1
+        print "Line #{line}: "
         5.times { random(@thunder) }
         print "extra -> #{rand(1..14)}"
         puts
