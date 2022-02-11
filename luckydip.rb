@@ -84,6 +84,8 @@ class LuckyDip
       pick = 5 unless pick <= 5 && pick >= 1
       luck
       lines.times do
+        line += 1
+        print "Line #{line}: "
         pick.times { random(@euro) }
         puts
         initialize
