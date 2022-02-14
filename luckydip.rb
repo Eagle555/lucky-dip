@@ -1,3 +1,4 @@
+# Generate random numbers for the lottery
 class LuckyDip
   def initialize
     @life = Array(1..47)
