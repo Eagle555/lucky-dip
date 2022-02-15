@@ -1,11 +1,11 @@
 # Generate random numbers for the lottery
 class LuckyDip
   def initialize
-    @life = Array(1..47)
-    @euro = Array(1..50)
-    @euro_extra = Array(1..12)
-    @lotto = Array(1..59)
-    @thunder = Array(1..39)
+    @life = Array(1..47) # SET FOR LIFE numbers
+    @euro = Array(1..50) # EUROMILLIONS numbers
+    @euro_extra = Array(1..12) # EUROMILLIONS EXTRA numbers
+    @lotto = Array(1..59) # LOTTO numbers
+    @thunder = Array(1..39) # THUNDERBALL numbers
   end
 
   def input
