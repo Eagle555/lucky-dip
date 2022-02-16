@@ -19,7 +19,7 @@ class LuckyDip
 
   private 
 
-  def text
+  def text # text for menu
     puts "Which game should I play?"
     puts "input '1' for SET FOR LIFE"
     puts "input '2' for EUROMILLIONS"
