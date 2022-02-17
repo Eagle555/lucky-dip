@@ -44,7 +44,7 @@ class LuckyDip
     luck if game <= 4 && game >= 1
     line = 0
     case game
-    when 1
+    when 1 # generate SET FOR LIFE numbers
       lines.times do
         line += 1
         print "Line #{line}: "
