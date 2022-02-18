@@ -52,7 +52,7 @@ class LuckyDip
         print "extra -> #{rand(1..10)} \n"
         initialize
       end
-    when 2
+    when 2 # generate EUROMILLIONS numbers
       lines.times do
         line += 1
         print "Line #{line}: "
