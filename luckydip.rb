@@ -62,7 +62,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 3
+    when 3 # generate LOTTO numbers
       lines.times do
         line += 1
         print "Line #{line}: "
