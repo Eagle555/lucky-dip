@@ -70,7 +70,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 4
+    when 4 # generate THUNDERBALL numbers
       lines.times do
         line += 1
         print "Line #{line}: "
