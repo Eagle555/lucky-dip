@@ -79,7 +79,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 5
+    when 5 # generate EUROMILLIONS HOTPICKS numbers
       puts "Pick how many numbers you want to match (1-5)"
       pick = gets.chomp.to_i
       pick = 5 unless pick <= 5 && pick >= 1
