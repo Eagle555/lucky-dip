@@ -103,7 +103,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 7
+    when 7 # exit the app
       puts "Thank you. Bye"
     else
       puts "Wrong number. Try again"
