@@ -105,7 +105,7 @@ class LuckyDip
       end
     when 7 # exit the app
       puts "Thank you. Bye"
-    else
+    else # repeat if wrong number
       puts "Wrong number. Try again"
       input
     end
