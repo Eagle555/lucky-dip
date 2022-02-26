@@ -112,5 +112,5 @@ class LuckyDip
   end
 end
 
-lets_play = LuckyDip.new
+lets_play = LuckyDip.new # create new object
 lets_play.input
