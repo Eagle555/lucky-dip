@@ -13,3 +13,7 @@ Lucky dip generates the numbers, so you don't have to choose.
 ```shell
 ruby luckydip.rb
 ```
+
+## Dependencies 
+
+- ruby 3.0.2
