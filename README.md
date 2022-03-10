@@ -1,4 +1,4 @@
-# lucky-dip
+# Lucky Dip
 
 Lucky dip generates the numbers, so you don't have to choose.
 - SET FOR LIFE
