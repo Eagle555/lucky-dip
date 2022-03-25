@@ -40,7 +40,7 @@ class LuckyDip
     numbers.delete(number)
   end
 
-  def play(game, lines)
+  def play(game, lines) # generation choice
     luck if game <= 4 && game >= 1
     line = 0
     case game
