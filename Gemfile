@@ -8,3 +8,4 @@ ruby '3.0.2' # ruby version
 
 gem 'rspec' # rspec for testing
 gem 'simplecov' # simplecov for coverage
+gem 'rubocop', require: false
