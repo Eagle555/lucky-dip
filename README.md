@@ -1,4 +1,4 @@
-# Lucky Dip - random number generation
+# Lucky Dip - random number generation for UK lottery
 
 Lucky dip generates the numbers, so you don't have to choose.
 - SET FOR LIFE
