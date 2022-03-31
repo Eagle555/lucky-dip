@@ -10,6 +10,7 @@ Lucky dip generates the numbers, so you don't have to choose.
 
 ## How to use
 
+Menu will appear with all the options
 ```shell
 ruby run.rb
 ```
