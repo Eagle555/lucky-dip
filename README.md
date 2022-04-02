@@ -2,7 +2,7 @@
 
 Lucky dip generates the numbers, so you don't have to choose.
 - SET FOR LIFE (Option 1)
-- EUROMILLIONS
+- EUROMILLIONS (Option 2)
 - LOTTO
 - THUNDERBALL
 - EUROMILLIONS HOTPICKS
