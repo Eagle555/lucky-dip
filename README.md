@@ -6,7 +6,7 @@ Lucky dip generates the numbers, so you don't have to choose.
 - LOTTO (Option 3)
 - THUNDERBALL (Option 4)
 - EUROMILLIONS HOTPICKS (Option 5)
-- LOTTO HOTPICKS
+- LOTTO HOTPICKS (Option 6)
 
 ## How to use
 
