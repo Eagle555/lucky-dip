@@ -7,6 +7,7 @@ Lucky dip generates the numbers, so you don't have to choose.
 - THUNDERBALL (Option 4)
 - EUROMILLIONS HOTPICKS (Option 5)
 - LOTTO HOTPICKS (Option 6)
+- (Option 7 - App Exit)
 
 ## How to use
 
