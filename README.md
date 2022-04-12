@@ -21,3 +21,4 @@ ruby run.rb
 - ruby 3.0.2
 - rspec
 - simplecov
+- rubocop
