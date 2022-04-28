@@ -11,5 +11,9 @@ describe LuckyDip, 'test user interface and functionality' do
       expect(luckydip).to respond_to(:input)
     end
 
+    it 'Lotto for life to match the game numbers' do
+      expect(luckydip.instance_variable_get(:@life)).to eq(Array(1..47))
+    end
+
   end
 end
