@@ -23,5 +23,9 @@ describe LuckyDip, 'test user interface and functionality' do
       expect(luckydip.instance_variable_get(:@lotto)).to eq(Array(1..59))
     end
 
+    it 'THUNDERBALL to match the game numbers' do
+      expect(luckydip.instance_variable_get(:@thunder)).to eq(Array(1..39))
+    end
+
   end
 end
