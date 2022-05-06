@@ -1,8 +1,11 @@
 require_relative "../luckydip"
 
 describe LuckyDip, 'test user interface and functionality' do
+
   luckydip = LuckyDip.new #new object
-  context 'Respond to methods and object' do
+  
+  context 'Respond to method and object' do
+
     it 'Creates new Bank object' do
       expect(luckydip).to be_instance_of LuckyDip
     end
@@ -10,6 +13,10 @@ describe LuckyDip, 'test user interface and functionality' do
     it 'Check if input exist' do
       expect(luckydip).to respond_to(:input)
     end
+
+  end
+
+  context 'Numbers to match lottery game numbers' do
 
     it 'SET FOR LIFE to match the game numbers' do
       expect(luckydip.instance_variable_get(:@life)).to eq(Array(1..47))
@@ -32,4 +39,5 @@ describe LuckyDip, 'test user interface and functionality' do
     end
 
   end
+
 end
