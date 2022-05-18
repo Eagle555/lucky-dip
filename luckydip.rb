@@ -6,6 +6,7 @@ class LuckyDip
     @euro_extra = Array(1..12) # EUROMILLIONS EXTRA numbers
     @lotto = Array(1..59) # LOTTO numbers
     @thunder = Array(1..39) # THUNDERBALL numbers
+    @analysis_life = {}
   end
 
   def input
@@ -28,10 +29,20 @@ class LuckyDip
     puts "input '5' for EUROMILLIONS HOTPICKS"
     puts "input '6' for LOTTO HOTPICKS"
     puts "input '7' to exit"
+    puts "input '8' for SET FOR LIFE analysis"
   end
 
   def luck
     puts "Your random numbers are"
+  end
+
+  def analysis(numbers)
+    number = numbers.sample
+    unless @analysis_life[number]
+      @analysis_life.store(number, 1)
+    else @analysis_life[number]
+      @analysis_life[number] += 1
+    end
   end
 
   def random(numbers)
@@ -105,6 +116,15 @@ class LuckyDip
       end
     when 7 # exit the app
       puts "Thank you. Bye"
+    when 8 # High number projection based on most random number generation
+      lines.times do
+        line += 1
+        print "Line #{line}: "
+        1_000_000.times { analysis(@life) }
+        print "extra -> #{rand(1..10)} \n"
+        puts "Number projection based on most random number generation"
+        p @analysis_life.sort_by(&:last).reverse
+      end
     else # repeat if wrong number
       puts "Wrong number. Try again"
       input
