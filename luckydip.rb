@@ -22,13 +22,13 @@ class LuckyDip
 
   def text # text for menu
     puts "Which game should I play?"
-    puts "input '1' for SET FOR LIFE"
-    puts "input '2' for EUROMILLIONS"
-    puts "input '3' for LOTTO"
-    puts "input '4' for THUNDERBALL"
-    puts "input '5' for EUROMILLIONS HOTPICKS"
-    puts "input '6' for LOTTO HOTPICKS"
-    puts "input '7' to exit"
+    puts "input '1' to exit"
+    puts "input '2' for SET FOR LIFE"
+    puts "input '3' for EUROMILLIONS"
+    puts "input '4' for LOTTO"
+    puts "input '5' for THUNDERBALL"
+    puts "input '6' for EUROMILLIONS HOTPICKS"
+    puts "input '7' for LOTTO HOTPICKS"
     puts "input '8' for SET FOR LIFE analysis"
   end
 
@@ -55,7 +55,7 @@ class LuckyDip
     luck if game <= 4 && game >= 1
     line = 0
     case game
-    when 1 # generate SET FOR LIFE numbers
+    when 2 # generate SET FOR LIFE numbers
       lines.times do
         line += 1
         print "Line #{line}: "
@@ -63,7 +63,7 @@ class LuckyDip
         print "extra -> #{rand(1..10)} \n"
         initialize
       end
-    when 2 # generate EUROMILLIONS numbers
+    when 3 # generate EUROMILLIONS numbers
       lines.times do
         line += 1
         print "Line #{line}: "
@@ -73,7 +73,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 3 # generate LOTTO numbers
+    when 4 # generate LOTTO numbers
       lines.times do
         line += 1
         print "Line #{line}: "
@@ -81,7 +81,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 4 # generate THUNDERBALL numbers
+    when 5 # generate THUNDERBALL numbers
       lines.times do
         line += 1
         print "Line #{line}: "
@@ -90,7 +90,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 5 # generate EUROMILLIONS HOTPICKS numbers
+    when 6 # generate EUROMILLIONS HOTPICKS numbers
       puts "Pick how many numbers you want to match (1-5)"
       pick = gets.chomp.to_i
       pick = 5 unless pick <= 5 && pick >= 1
@@ -102,7 +102,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 6 # generate LOTTO HOTPICKS numbers
+    when 7 # generate LOTTO HOTPICKS numbers
       puts "Pick how many numbers you want to match (1-5)"
       pick = gets.chomp.to_i
       pick = 5 unless pick <= 5 && pick >= 1
@@ -114,7 +114,7 @@ class LuckyDip
         puts
         initialize
       end
-    when 7 # exit the app
+    when 1 # exit the app
       puts "Thank you. Bye"
     when 8 # High number projection based on most random number generation
       lines.times do
