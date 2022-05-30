@@ -55,6 +55,8 @@ class LuckyDip
     luck if game <= 4 && game >= 1
     line = 0
     case game
+    when 1 # exit the app
+      puts "Thank you. Bye"
     when 2 # generate SET FOR LIFE numbers
       lines.times do
         line += 1
@@ -114,8 +116,6 @@ class LuckyDip
         puts
         initialize
       end
-    when 1 # exit the app
-      puts "Thank you. Bye"
     when 8 # High number projection based on most random number generation
       lines.times do
         line += 1
